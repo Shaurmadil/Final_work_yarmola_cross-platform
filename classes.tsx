@@ -16,7 +16,6 @@ export class Triangle extends Flat_Figure {
     }
 
     calculate_the_area(): number {
-        // Формула Герона для обчислення площі трикутника
         const p = (this.a + this.b + this.c) / 2;
         return Math.sqrt(p * (p - this.a) * (p - this.b) * (p - this.c));
     }
